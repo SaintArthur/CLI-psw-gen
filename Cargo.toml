@@ -1,0 +1,12 @@
+[package]
+name = "rugen"
+version = "1.0.0"
+edition = "2018"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+
+[dependencies]
+clap = "2.33.3"
+rand = "0.8.4"
